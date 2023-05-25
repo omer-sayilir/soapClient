@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.11</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.kolaysoft</groupId>
+	<artifactId>soapClient</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>soapClient</name>
+	<description>soap client</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<id>wsimport-from-jdk</id>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<!-- using wsdl from an url -->
+					<wsdlUrls>
+						<wsdlUrl>
+							https://peyktest.kolaysoft.com.tr/ik-platform/services/ikService?wsdl
+						</wsdlUrl>
+					</wsdlUrls>
+					<!-- or using wsdls file directory -->
+					<!-- <wsdlDirectory>src/wsdl</wsdlDirectory> -->
+					<!-- which wsdl file -->
+					<!-- <wsdlFiles> -->
+					<!-- <wsdlFile>myWSDL.wsdl</wsdlFile> -->
+					<!--</wsdlFiles> -->
+					<!-- Keep generated files -->
+					<keep>true</keep>
+					<!-- Package name -->
+					<packageName>tr.com.kolaysoft.peyk.soap</packageName>
+					<!-- generated source files destination-->
+					<sourceDestDir>target/generatedclasses</sourceDestDir>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
