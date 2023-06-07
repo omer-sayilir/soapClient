@@ -17,7 +17,7 @@ public class SoapClientApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("staretd....");
+		System.out.println("started....");
 		peykServiceClient.callGetIlLer();
 	}
 }
