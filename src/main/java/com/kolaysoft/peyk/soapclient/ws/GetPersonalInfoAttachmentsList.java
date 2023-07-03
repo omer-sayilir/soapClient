@@ -7,12 +7,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getEmployeeByTckn complex type.
+ * <p>Java class for getPersonalInfoAttachmentsList complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="getEmployeeByTckn"&gt;
+ * &lt;complexType name="getPersonalInfoAttachmentsList"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getEmployeeByTckn", propOrder = {
+@XmlType(name = "getPersonalInfoAttachmentsList", propOrder = {
     "tckn"
 })
-public class GetEmployeeByTckn {
+public class GetPersonalInfoAttachmentsList {
 
     protected String tckn;
 

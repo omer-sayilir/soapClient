@@ -1,6 +1,7 @@
 package com.kolaysoft.peyk.soapclient.service;
 
 import com.kolaysoft.peyk.soapclient.ws.*;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.xml.datatype.DatatypeConfigurationException;
@@ -10,9 +11,10 @@ import java.util.List;
 
 @Component
 public class PeykServiceClient {
-    private final String URL = "https://peyktest.kolaysoft.com.tr/ik-platform/services/ikService";
 
     private final PeykService peykService;
+    @Value("${peyk.ws.url}")
+    private String URL;
 
     public PeykServiceClient(PeykService peykService) {
         this.peykService = peykService;
@@ -42,7 +44,7 @@ public class PeykServiceClient {
         request.setPage(page);
         request.setSize(size);
         EmployeeListDto response = ((GetEmployeeResponse) peykService.performRequest(URL, request)).getReturn();
-       return response;
+        return response;
 
     }
 
@@ -88,7 +90,7 @@ public class PeykServiceClient {
 
         DocumentListPyld response = ((GetBordroByEmployeeResponse) peykService.performRequest(URL, request)).getReturn();
 
-       return response;
+        return response;
     }
 
     public DocumentListPyld GetBordroByDateRange(String startDate, String endDate, Integer page, Integer size) throws DatatypeConfigurationException {
@@ -110,9 +112,9 @@ public class PeykServiceClient {
 
     }
 
-    public DocumentResultPyld ImportBordroByByteArray(String fileName, Integer month,Integer year, byte[] bulkBytes){
+    public DocumentResultPyld ImportBordroByByteArray(String fileName, Integer month, Integer year, byte[] bulkBytes) {
 
-        ImportBordroByByteArray request= new ImportBordroByByteArray();
+        ImportBordroByByteArray request = new ImportBordroByByteArray();
         request.setFileName(fileName);
         request.setMonth(month);
         request.setYear(year);
@@ -122,4 +124,39 @@ public class PeykServiceClient {
 
         return response;
     }
+
+    public DocumentResultPyld ImportMultipleBordrosByAttachment(Integer month, Integer year) {
+
+
+        ImportMultipleBordrosByAttachment request = new ImportMultipleBordrosByAttachment();
+        request.setMonth(month);
+        request.setYear(year);
+
+
+        DocumentResultPyld response = ((ImportBordroByByteArrayResponse) peykService.performRequest(URL, request)).getReturn();
+
+        return response;
+    }
+
+    public PersonalInfoAttachmentsResultPyld SavePersonalInfoNotAttachedFiles(String tckn,
+                                                                              String attachmentName,
+                                                                              Integer surveyId,
+                                                                              byte[] bulkBytes,
+                                                                              Boolean isReplaceWithExisting) {
+
+
+        SavePersonalInfoNotAttachedFiles request = new SavePersonalInfoNotAttachedFiles();
+        request.setTckn(tckn);
+        request.setAttachmentName(attachmentName);
+        request.setSurveyId(surveyId);
+        request.setBulkBytes(bulkBytes);
+        request.setIsReplaceWithExisting(isReplaceWithExisting);
+
+
+        PersonalInfoAttachmentsResultPyld response = ((SavePersonalInfoNotAttachedFilesResponse) peykService.performRequest(URL, request)).getReturn();
+
+        return response;
+    }
+
+
 }

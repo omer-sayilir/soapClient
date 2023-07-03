@@ -17,6 +17,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="comment" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="content" type="{http://www.w3.org/2001/XMLSchema}base64Binary" minOccurs="0"/&gt;
+ *         &lt;element name="createdAt" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="error" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="formId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="formName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
@@ -24,6 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="jsonContent" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="state" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="tckn" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="updatedAt" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,17 +38,22 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "formDto", propOrder = {
     "comment",
+    "content",
+    "createdAt",
     "error",
     "formId",
     "formName",
     "formSessionId",
     "jsonContent",
     "state",
-    "tckn"
+    "tckn",
+    "updatedAt"
 })
 public class FormDto {
 
     protected String comment;
+    protected byte[] content;
+    protected String createdAt;
     protected Boolean error;
     protected Integer formId;
     protected String formName;
@@ -53,6 +61,7 @@ public class FormDto {
     protected String jsonContent;
     protected String state;
     protected String tckn;
+    protected String updatedAt;
 
     /**
      * Gets the value of the comment property.
@@ -76,6 +85,52 @@ public class FormDto {
      */
     public void setComment(String value) {
         this.comment = value;
+    }
+
+    /**
+     * Gets the value of the content property.
+     * 
+     * @return
+     *     possible object is
+     *     byte[]
+     */
+    public byte[] getContent() {
+        return content;
+    }
+
+    /**
+     * Sets the value of the content property.
+     * 
+     * @param value
+     *     allowed object is
+     *     byte[]
+     */
+    public void setContent(byte[] value) {
+        this.content = value;
+    }
+
+    /**
+     * Gets the value of the createdAt property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    /**
+     * Sets the value of the createdAt property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCreatedAt(String value) {
+        this.createdAt = value;
     }
 
     /**
@@ -244,6 +299,30 @@ public class FormDto {
      */
     public void setTckn(String value) {
         this.tckn = value;
+    }
+
+    /**
+     * Gets the value of the updatedAt property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getUpdatedAt() {
+        return updatedAt;
+    }
+
+    /**
+     * Sets the value of the updatedAt property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setUpdatedAt(String value) {
+        this.updatedAt = value;
     }
 
 }

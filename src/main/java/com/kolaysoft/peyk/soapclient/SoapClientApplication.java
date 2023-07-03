@@ -34,13 +34,18 @@ public class SoapClientApplication implements CommandLineRunner {
 //
 //        helper.UpdateEmployeeStatus();
 //
-//        helper.CreateNewEmployee();
-
-        helper.GetBordroOfEmployee();
+//       helper.CreateNewEmployee();
 
 //        helper.GetBordroOfCompanyByDateRange();
 
 //        helper.UploadBordro();
+
+//       helper.GetBordroOfEmployee();
+
+//        helper.ImportMultipleBordrosByAttachment();
+
+        helper.SavePersonalInfoNotAttachedFiles();
+
 
 
     }

@@ -7,16 +7,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for getEmployeeByTckn complex type.
+ * <p>Java class for getFormWithContentByFormId complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="getEmployeeByTckn"&gt;
+ * &lt;complexType name="getFormWithContentByFormId"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="tckn" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="formId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -26,35 +26,35 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "getEmployeeByTckn", propOrder = {
-    "tckn"
+@XmlType(name = "getFormWithContentByFormId", propOrder = {
+    "formId"
 })
-public class GetEmployeeByTckn {
+public class GetFormWithContentByFormId {
 
-    protected String tckn;
+    protected Integer formId;
 
     /**
-     * Gets the value of the tckn property.
+     * Gets the value of the formId property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Integer }
      *     
      */
-    public String getTckn() {
-        return tckn;
+    public Integer getFormId() {
+        return formId;
     }
 
     /**
-     * Sets the value of the tckn property.
+     * Sets the value of the formId property.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Integer }
      *     
      */
-    public void setTckn(String value) {
-        this.tckn = value;
+    public void setFormId(Integer value) {
+        this.formId = value;
     }
 
 }

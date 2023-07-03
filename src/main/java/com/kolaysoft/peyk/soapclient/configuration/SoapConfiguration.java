@@ -20,6 +20,7 @@ public class SoapConfiguration {
 		PeykService client = new PeykService();
 		client.setMarshaller(marshaller);
 		client.setUnmarshaller(marshaller);
+
 		//for basic authentication you can use following..
 		//client.setMessageSender(httpComponentsMessageSender());
 		return client;

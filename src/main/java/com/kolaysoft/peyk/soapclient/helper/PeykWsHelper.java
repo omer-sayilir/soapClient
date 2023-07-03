@@ -5,14 +5,10 @@ import com.kolaysoft.peyk.soapclient.ws.*;
 import org.springframework.core.io.ClassPathResource;
 
 import javax.xml.datatype.DatatypeConfigurationException;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -92,6 +88,7 @@ public class PeykWsHelper {
         employee.setName("Erdem");
         employee.setSurname("Bayrak");
         employee.setTelephone("05454441444");
+        employee.setAddress(" Ankara");
         newEmployeeList.add(employee);
         EmployeeResultPyld response = peykServiceClient.ImportMultipleEmployees(newEmployeeList);
 
@@ -120,6 +117,30 @@ public class PeykWsHelper {
 
     }
 
+    public void SavePersonalInfoNotAttachedFiles() {
+        try {
+            String tckn = "23168513908";
+            String attachmentName = "Diploma";
+            Integer surveyId = 4012;
+
+            ClassPathResource resource = new ClassPathResource("bordro_202305.pdf");
+            byte[] bulkBytes = Files.readAllBytes(Paths.get(resource.getURI()));
+            Boolean isReplaceWithExisting = true;
+
+
+            PersonalInfoAttachmentsResultPyld response = peykServiceClient.SavePersonalInfoNotAttachedFiles(tckn, attachmentName, surveyId, bulkBytes, isReplaceWithExisting);
+            if (!response.isError()) {
+                String comment = response.getComment();
+                System.out.println("SavePersonalInfoNotAttachedFiles surveyId: " + surveyId + ", comment:" + comment);
+            } else {
+                System.out.println("Error SavePersonalInfoNotAttachedFiles" + response.getComment());
+            }
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     //endregion
 
     //region bordro
@@ -143,7 +164,7 @@ public class PeykWsHelper {
             }
             for (DocumentPyld document : resultList) {
                 int rand = ran.nextInt(6) + 5;
-                String outputFile="/tmp/peykBordro/"+document.getTckn()+"_"+rand+".pdf";
+                String outputFile = "/tmp/peykBordro/" + document.getTckn() + "_" + rand + ".pdf";
                 try (FileOutputStream fos = new FileOutputStream(outputFile)) {
 
                     fos.write(document.getBytes());
@@ -153,7 +174,7 @@ public class PeykWsHelper {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-                System.out.println("total bordro count:"+response.getTotalCount()+  " bordro employee Tckn: " + document.getTckn()+" outputFile:"+outputFile);
+                System.out.println("total bordro count:" + response.getTotalCount() + " bordro employee Tckn: " + document.getTckn() + " outputFile:" + outputFile);
 
             }
         } else {
@@ -190,28 +211,36 @@ public class PeykWsHelper {
 
     public void UploadBordro() {
         try {
-        String fileName = "bordro_202305.pdf";
-        Integer month = 5;
-        Integer year = 2023;
-        ClassPathResource resource = new ClassPathResource("bordro_202305.pdf");
-        byte[] bulkBytes  = Files.readAllBytes(Paths.get(resource.getURI()));
+            String fileName = "bordro_202305.pdf";
+            Integer month = 5;
+            Integer year = 2023;
+            ClassPathResource resource = new ClassPathResource("bordro_202305.pdf");
+            byte[] bulkBytes = Files.readAllBytes(Paths.get(resource.getURI()));
 
-        DocumentResultPyld response = peykServiceClient.ImportBordroByByteArray(fileName,month,year,bulkBytes);
+            DocumentResultPyld response = peykServiceClient.ImportBordroByByteArray(fileName, month, year, bulkBytes);
 
-        if(response.isError()){
-            System.out.println("UploadBordro error "+response.getComment());
-        }else {
-            System.out.println(" bordro session number: "+response.getSessionNumber());
-            List<Integer> idList=response.getIdList();
-            for (Integer id:idList) {
-                System.out.println(" bordo Id "+ id);
+            if (response.isError()) {
+                System.out.println("UploadBordro error " + response.getComment());
+            } else {
+                System.out.println(" bordro session number: " + response.getSessionNumber());
+                List<Integer> idList = response.getIdList();
+                for (Integer id : idList) {
+                    System.out.println(" bordo Id " + id);
+                }
+
             }
-
-        }
 
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+    }
+
+    public void ImportMultipleBordrosByAttachment() {
+        String fileName = "bordro_202305.pdf";
+        Integer month = 5;
+        Integer year = 2023;
+        DocumentResultPyld response = peykServiceClient.ImportMultipleBordrosByAttachment(month, year);
 
     }
 

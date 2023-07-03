@@ -51,7 +51,8 @@
 					<!-- using wsdl from an url -->
 					<wsdlUrls>
 						<wsdlUrl>
-							https://peyktest.kolaysoft.com.tr/ik-platform/services/ikService?wsdl
+<!--							https://peyktest.kolaysoft.com.tr/ik-platform/services/ikService?wsdl-->
+							http://localhost:48080/ik-platform/services/ikService?wsdl
 						</wsdlUrl>
 					</wsdlUrls>
 					<!-- or using wsdls file directory -->
@@ -61,11 +62,11 @@
 					<!-- <wsdlFile>myWSDL.wsdl</wsdlFile> -->
 					<!--</wsdlFiles> -->
 					<!-- Keep generated files -->
-					<keep>true</keep>
+					<keep>false</keep>
 					<!-- Package name -->
-					<packageName>tr.com.kolaysoft.peyk.soap</packageName>
+					<packageName>com.kolaysoft.peyk.soapclient.ws</packageName>
 					<!-- generated source files destination-->
-					<sourceDestDir>target/generatedclasses</sourceDestDir>
+					<sourceDestDir>${project.build.sourceDirectory}</sourceDestDir>
 				</configuration>
 			</plugin>
 		</plugins>
