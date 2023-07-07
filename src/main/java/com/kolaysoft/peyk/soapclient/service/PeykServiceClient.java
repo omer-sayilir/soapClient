@@ -135,7 +135,7 @@ public class PeykServiceClient {
         request.setYear(year);
 
 
-        DocumentResultPyld response = ((ImportBordroByByteArrayResponse) peykService.performRequest(URL, request, attachments)).getReturn();
+        DocumentResultPyld response = ((ImportMultipleBordrosByAttachmentResponse) peykService.performRequest(URL, request, attachments)).getReturn();
 
         return response;
     }

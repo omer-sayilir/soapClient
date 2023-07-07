@@ -246,7 +246,7 @@ public class PeykWsHelper {
     }
 
     public void ImportMultipleBordrosByAttachment() {
-        String filePath = "/tmp/bordrolar.pdf";
+        String filePath = "/tmp/bordro.pdf";
         File file = new File(filePath);
         if (!file.exists()) throw new RuntimeException("Bordro dosyasina erisilemiyor");
 
@@ -259,6 +259,12 @@ public class PeykWsHelper {
         attachments.put(file.getName(), dataHandler);
 
         DocumentResultPyld response = peykServiceClient.ImportMultipleBordrosByAttachment(month, year, attachments);
+        if(response.isError()){
+            System.out.println("Error:"+response.isError()+ " "+response.getComment());
+        }else{
+            System.out.println("response: "+response.getComment());
+        }
+
 
     }
 
