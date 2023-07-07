@@ -25,7 +25,7 @@ public class SoapClientApplication implements CommandLineRunner {
 
 
         PeykWsHelper helper = new PeykWsHelper(peykServiceClient);
-//        helper.GetIller();
+  //     helper.GetIller();
 //        helper.GetIlceler();
 //
 //        helper.GetEmployeeDetail();
@@ -42,9 +42,9 @@ public class SoapClientApplication implements CommandLineRunner {
 
 //       helper.GetBordroOfEmployee();
 
-//        helper.ImportMultipleBordrosByAttachment();
+     helper.ImportMultipleBordrosByAttachment();
 
-        helper.SavePersonalInfoNotAttachedFiles();
+//        helper.SavePersonalInfoNotAttachedFiles();
 
 
 

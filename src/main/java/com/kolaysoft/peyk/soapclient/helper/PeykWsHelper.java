@@ -2,17 +2,20 @@ package com.kolaysoft.peyk.soapclient.helper;
 
 import com.kolaysoft.peyk.soapclient.service.PeykServiceClient;
 import com.kolaysoft.peyk.soapclient.ws.*;
+
+import java.util.*;
+
 import org.springframework.core.io.ClassPathResource;
 
+import javax.activation.DataHandler;
+import javax.activation.FileDataSource;
 import javax.xml.datatype.DatatypeConfigurationException;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class PeykWsHelper {
 
@@ -20,6 +23,15 @@ public class PeykWsHelper {
 
     public PeykWsHelper(PeykServiceClient peykServiceClient) {
         this.peykServiceClient = peykServiceClient;
+    }
+
+    private static String encodeFileToBase64(File file) {
+        try {
+            byte[] fileContent = Files.readAllBytes(file.toPath());
+            return Base64.getEncoder().encodeToString(fileContent);
+        } catch (IOException e) {
+            throw new IllegalStateException("could not read file " + file, e);
+        }
     }
 
     public void GetIller() {
@@ -35,6 +47,8 @@ public class PeykWsHelper {
 
     }
 
+    //region employee
+
     public void GetIlceler() {
         IlcePyld response = peykServiceClient.CallGetIlceler();
         if (response.getError() != null) {
@@ -46,8 +60,6 @@ public class PeykWsHelper {
             }
         }
     }
-
-    //region employee
 
     /**
      * employee
@@ -140,7 +152,6 @@ public class PeykWsHelper {
             throw new RuntimeException(e);
         }
     }
-
     //endregion
 
     //region bordro
@@ -237,10 +248,19 @@ public class PeykWsHelper {
     }
 
     public void ImportMultipleBordrosByAttachment() {
-        String fileName = "bordro_202305.pdf";
+        String filePath = "/tmp/bordrolar.pdf";
+        File file = new File(filePath);
+        if (!file.exists()) throw new RuntimeException("Bordro dosyasina erisilemiyor");
+
         Integer month = 5;
         Integer year = 2023;
-        DocumentResultPyld response = peykServiceClient.ImportMultipleBordrosByAttachment(month, year);
+        Map<String, DataHandler> attachments = new HashMap<>();
+
+        FileDataSource fileDataSource = new FileDataSource(filePath);
+        DataHandler dataHandler = new DataHandler(fileDataSource);
+        attachments.put(file.getName(), dataHandler);
+
+        DocumentResultPyld response = peykServiceClient.ImportMultipleBordrosByAttachment(month, year,attachments);
 
     }
 

@@ -4,10 +4,12 @@ import com.kolaysoft.peyk.soapclient.ws.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.activation.DataHandler;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.List;
+import java.util.Map;
 
 @Component
 public class PeykServiceClient {
@@ -125,7 +127,7 @@ public class PeykServiceClient {
         return response;
     }
 
-    public DocumentResultPyld ImportMultipleBordrosByAttachment(Integer month, Integer year) {
+    public DocumentResultPyld ImportMultipleBordrosByAttachment(Integer month, Integer year, Map<String, DataHandler> attachments) {
 
 
         ImportMultipleBordrosByAttachment request = new ImportMultipleBordrosByAttachment();
@@ -133,7 +135,7 @@ public class PeykServiceClient {
         request.setYear(year);
 
 
-        DocumentResultPyld response = ((ImportBordroByByteArrayResponse) peykService.performRequest(URL, request)).getReturn();
+        DocumentResultPyld response = ((ImportBordroByByteArrayResponse) peykService.performRequest(URL, request,attachments)).getReturn();
 
         return response;
     }
