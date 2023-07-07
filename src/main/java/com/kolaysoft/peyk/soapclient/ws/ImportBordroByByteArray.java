@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for importBordroByByteArray complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="importBordroByByteArray"&gt;
  *   &lt;complexContent&gt;
@@ -25,15 +24,13 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "importBordroByByteArray", propOrder = {
-    "bulkBytes",
-    "fileName",
-    "year",
-    "month"
+        "bulkBytes",
+        "fileName",
+        "year",
+        "month"
 })
 public class ImportBordroByByteArray {
 
@@ -44,10 +41,9 @@ public class ImportBordroByByteArray {
 
     /**
      * Gets the value of the bulkBytes property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     * byte[]
      */
     public byte[] getBulkBytes() {
         return bulkBytes;
@@ -55,10 +51,9 @@ public class ImportBordroByByteArray {
 
     /**
      * Sets the value of the bulkBytes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setBulkBytes(byte[] value) {
         this.bulkBytes = value;
@@ -66,11 +61,9 @@ public class ImportBordroByByteArray {
 
     /**
      * Gets the value of the fileName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFileName() {
         return fileName;
@@ -78,11 +71,9 @@ public class ImportBordroByByteArray {
 
     /**
      * Sets the value of the fileName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFileName(String value) {
         this.fileName = value;
@@ -90,11 +81,9 @@ public class ImportBordroByByteArray {
 
     /**
      * Gets the value of the year property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getYear() {
         return year;
@@ -102,11 +91,9 @@ public class ImportBordroByByteArray {
 
     /**
      * Sets the value of the year property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setYear(Integer value) {
         this.year = value;
@@ -114,11 +101,9 @@ public class ImportBordroByByteArray {
 
     /**
      * Gets the value of the month property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getMonth() {
         return month;
@@ -126,11 +111,9 @@ public class ImportBordroByByteArray {
 
     /**
      * Sets the value of the month property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setMonth(Integer value) {
         this.month = value;

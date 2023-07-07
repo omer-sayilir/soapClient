@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for getFormsByFormTypeAndEmployee complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="getFormsByFormTypeAndEmployee"&gt;
  *   &lt;complexContent&gt;
@@ -23,13 +22,11 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getFormsByFormTypeAndEmployee", propOrder = {
-    "formTypeId",
-    "tckn"
+        "formTypeId",
+        "tckn"
 })
 public class GetFormsByFormTypeAndEmployee {
 
@@ -38,11 +35,9 @@ public class GetFormsByFormTypeAndEmployee {
 
     /**
      * Gets the value of the formTypeId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getFormTypeId() {
         return formTypeId;
@@ -50,11 +45,9 @@ public class GetFormsByFormTypeAndEmployee {
 
     /**
      * Sets the value of the formTypeId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setFormTypeId(Integer value) {
         this.formTypeId = value;
@@ -62,11 +55,9 @@ public class GetFormsByFormTypeAndEmployee {
 
     /**
      * Gets the value of the tckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTckn() {
         return tckn;
@@ -74,11 +65,9 @@ public class GetFormsByFormTypeAndEmployee {
 
     /**
      * Sets the value of the tckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTckn(String value) {
         this.tckn = value;

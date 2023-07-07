@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for ilceDto complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="ilceDto"&gt;
  *   &lt;complexContent&gt;
@@ -24,14 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ilceDto", propOrder = {
-    "ilId",
-    "ilceId",
-    "isim"
+        "ilId",
+        "ilceId",
+        "isim"
 })
 public class IlceDto {
 
@@ -41,11 +38,9 @@ public class IlceDto {
 
     /**
      * Gets the value of the ilId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getIlId() {
         return ilId;
@@ -53,11 +48,9 @@ public class IlceDto {
 
     /**
      * Sets the value of the ilId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setIlId(Integer value) {
         this.ilId = value;
@@ -65,11 +58,9 @@ public class IlceDto {
 
     /**
      * Gets the value of the ilceId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getIlceId() {
         return ilceId;
@@ -77,11 +68,9 @@ public class IlceDto {
 
     /**
      * Sets the value of the ilceId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setIlceId(Integer value) {
         this.ilceId = value;
@@ -89,11 +78,9 @@ public class IlceDto {
 
     /**
      * Gets the value of the isim property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getIsim() {
         return isim;
@@ -101,11 +88,9 @@ public class IlceDto {
 
     /**
      * Sets the value of the isim property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setIsim(String value) {
         this.isim = value;

@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for formDto complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="formDto"&gt;
  *   &lt;complexContent&gt;
@@ -32,22 +31,20 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "formDto", propOrder = {
-    "comment",
-    "content",
-    "createdAt",
-    "error",
-    "formId",
-    "formName",
-    "formSessionId",
-    "jsonContent",
-    "state",
-    "tckn",
-    "updatedAt"
+        "comment",
+        "content",
+        "createdAt",
+        "error",
+        "formId",
+        "formName",
+        "formSessionId",
+        "jsonContent",
+        "state",
+        "tckn",
+        "updatedAt"
 })
 public class FormDto {
 
@@ -65,11 +62,9 @@ public class FormDto {
 
     /**
      * Gets the value of the comment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getComment() {
         return comment;
@@ -77,11 +72,9 @@ public class FormDto {
 
     /**
      * Sets the value of the comment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setComment(String value) {
         this.comment = value;
@@ -89,10 +82,9 @@ public class FormDto {
 
     /**
      * Gets the value of the content property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     * byte[]
      */
     public byte[] getContent() {
         return content;
@@ -100,10 +92,9 @@ public class FormDto {
 
     /**
      * Sets the value of the content property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setContent(byte[] value) {
         this.content = value;
@@ -111,11 +102,9 @@ public class FormDto {
 
     /**
      * Gets the value of the createdAt property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCreatedAt() {
         return createdAt;
@@ -123,11 +112,9 @@ public class FormDto {
 
     /**
      * Sets the value of the createdAt property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCreatedAt(String value) {
         this.createdAt = value;
@@ -135,11 +122,9 @@ public class FormDto {
 
     /**
      * Gets the value of the error property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isError() {
         return error;
@@ -147,11 +132,9 @@ public class FormDto {
 
     /**
      * Sets the value of the error property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setError(Boolean value) {
         this.error = value;
@@ -159,11 +142,9 @@ public class FormDto {
 
     /**
      * Gets the value of the formId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getFormId() {
         return formId;
@@ -171,11 +152,9 @@ public class FormDto {
 
     /**
      * Sets the value of the formId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setFormId(Integer value) {
         this.formId = value;
@@ -183,11 +162,9 @@ public class FormDto {
 
     /**
      * Gets the value of the formName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFormName() {
         return formName;
@@ -195,11 +172,9 @@ public class FormDto {
 
     /**
      * Sets the value of the formName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFormName(String value) {
         this.formName = value;
@@ -207,11 +182,9 @@ public class FormDto {
 
     /**
      * Gets the value of the formSessionId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getFormSessionId() {
         return formSessionId;
@@ -219,11 +192,9 @@ public class FormDto {
 
     /**
      * Sets the value of the formSessionId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setFormSessionId(Integer value) {
         this.formSessionId = value;
@@ -231,11 +202,9 @@ public class FormDto {
 
     /**
      * Gets the value of the jsonContent property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getJsonContent() {
         return jsonContent;
@@ -243,11 +212,9 @@ public class FormDto {
 
     /**
      * Sets the value of the jsonContent property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setJsonContent(String value) {
         this.jsonContent = value;
@@ -255,11 +222,9 @@ public class FormDto {
 
     /**
      * Gets the value of the state property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getState() {
         return state;
@@ -267,11 +232,9 @@ public class FormDto {
 
     /**
      * Sets the value of the state property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setState(String value) {
         this.state = value;
@@ -279,11 +242,9 @@ public class FormDto {
 
     /**
      * Gets the value of the tckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTckn() {
         return tckn;
@@ -291,11 +252,9 @@ public class FormDto {
 
     /**
      * Sets the value of the tckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTckn(String value) {
         this.tckn = value;
@@ -303,11 +262,9 @@ public class FormDto {
 
     /**
      * Gets the value of the updatedAt property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getUpdatedAt() {
         return updatedAt;
@@ -315,11 +272,9 @@ public class FormDto {
 
     /**
      * Sets the value of the updatedAt property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setUpdatedAt(String value) {
         this.updatedAt = value;

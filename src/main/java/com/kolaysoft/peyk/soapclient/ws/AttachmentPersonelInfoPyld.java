@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for attachmentPersonelInfoPyld complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="attachmentPersonelInfoPyld"&gt;
  *   &lt;complexContent&gt;
@@ -24,14 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "attachmentPersonelInfoPyld", propOrder = {
-    "base64Value",
-    "isAttached",
-    "name"
+        "base64Value",
+        "isAttached",
+        "name"
 })
 public class AttachmentPersonelInfoPyld {
 
@@ -41,11 +38,9 @@ public class AttachmentPersonelInfoPyld {
 
     /**
      * Gets the value of the base64Value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getBase64Value() {
         return base64Value;
@@ -53,11 +48,9 @@ public class AttachmentPersonelInfoPyld {
 
     /**
      * Sets the value of the base64Value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setBase64Value(String value) {
         this.base64Value = value;
@@ -65,11 +58,9 @@ public class AttachmentPersonelInfoPyld {
 
     /**
      * Gets the value of the isAttached property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isIsAttached() {
         return isAttached;
@@ -77,11 +68,9 @@ public class AttachmentPersonelInfoPyld {
 
     /**
      * Sets the value of the isAttached property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setIsAttached(Boolean value) {
         this.isAttached = value;
@@ -89,11 +78,9 @@ public class AttachmentPersonelInfoPyld {
 
     /**
      * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getName() {
         return name;
@@ -101,11 +88,9 @@ public class AttachmentPersonelInfoPyld {
 
     /**
      * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setName(String value) {
         this.name = value;

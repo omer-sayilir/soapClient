@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for personalInfoAttachmentsResultPyld complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="personalInfoAttachmentsResultPyld"&gt;
  *   &lt;complexContent&gt;
@@ -24,14 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "personalInfoAttachmentsResultPyld", propOrder = {
-    "comment",
-    "error",
-    "surveyId"
+        "comment",
+        "error",
+        "surveyId"
 })
 public class PersonalInfoAttachmentsResultPyld {
 
@@ -41,11 +38,9 @@ public class PersonalInfoAttachmentsResultPyld {
 
     /**
      * Gets the value of the comment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getComment() {
         return comment;
@@ -53,11 +48,9 @@ public class PersonalInfoAttachmentsResultPyld {
 
     /**
      * Sets the value of the comment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setComment(String value) {
         this.comment = value;
@@ -65,7 +58,6 @@ public class PersonalInfoAttachmentsResultPyld {
 
     /**
      * Gets the value of the error property.
-     * 
      */
     public boolean isError() {
         return error;
@@ -73,7 +65,6 @@ public class PersonalInfoAttachmentsResultPyld {
 
     /**
      * Sets the value of the error property.
-     * 
      */
     public void setError(boolean value) {
         this.error = value;
@@ -81,11 +72,9 @@ public class PersonalInfoAttachmentsResultPyld {
 
     /**
      * Gets the value of the surveyId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getSurveyId() {
         return surveyId;
@@ -93,11 +82,9 @@ public class PersonalInfoAttachmentsResultPyld {
 
     /**
      * Sets the value of the surveyId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setSurveyId(Integer value) {
         this.surveyId = value;

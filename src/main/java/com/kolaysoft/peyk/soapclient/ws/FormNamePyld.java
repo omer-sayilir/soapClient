@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for formNamePyld complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="formNamePyld"&gt;
  *   &lt;complexContent&gt;
@@ -24,14 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "formNamePyld", propOrder = {
-    "formName",
-    "formType",
-    "isAnswerMandatory"
+        "formName",
+        "formType",
+        "isAnswerMandatory"
 })
 public class FormNamePyld {
 
@@ -41,11 +38,9 @@ public class FormNamePyld {
 
     /**
      * Gets the value of the formName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFormName() {
         return formName;
@@ -53,11 +48,9 @@ public class FormNamePyld {
 
     /**
      * Sets the value of the formName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFormName(String value) {
         this.formName = value;
@@ -65,11 +58,9 @@ public class FormNamePyld {
 
     /**
      * Gets the value of the formType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFormType() {
         return formType;
@@ -77,11 +68,9 @@ public class FormNamePyld {
 
     /**
      * Sets the value of the formType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFormType(String value) {
         this.formType = value;
@@ -89,11 +78,9 @@ public class FormNamePyld {
 
     /**
      * Gets the value of the isAnswerMandatory property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isIsAnswerMandatory() {
         return isAnswerMandatory;
@@ -101,11 +88,9 @@ public class FormNamePyld {
 
     /**
      * Sets the value of the isAnswerMandatory property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setIsAnswerMandatory(Boolean value) {
         this.isAnswerMandatory = value;

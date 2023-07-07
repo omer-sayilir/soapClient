@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for documentPyld complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="documentPyld"&gt;
  *   &lt;complexContent&gt;
@@ -27,17 +26,15 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "documentPyld", propOrder = {
-    "bytes",
-    "employee",
-    "error",
-    "state",
-    "tckn",
-    "term"
+        "bytes",
+        "employee",
+        "error",
+        "state",
+        "tckn",
+        "term"
 })
 public class DocumentPyld {
 
@@ -50,10 +47,9 @@ public class DocumentPyld {
 
     /**
      * Gets the value of the bytes property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     * byte[]
      */
     public byte[] getBytes() {
         return bytes;
@@ -61,10 +57,9 @@ public class DocumentPyld {
 
     /**
      * Sets the value of the bytes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setBytes(byte[] value) {
         this.bytes = value;
@@ -72,11 +67,9 @@ public class DocumentPyld {
 
     /**
      * Gets the value of the employee property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getEmployee() {
         return employee;
@@ -84,11 +77,9 @@ public class DocumentPyld {
 
     /**
      * Sets the value of the employee property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setEmployee(String value) {
         this.employee = value;
@@ -96,11 +87,9 @@ public class DocumentPyld {
 
     /**
      * Gets the value of the error property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getError() {
         return error;
@@ -108,11 +97,9 @@ public class DocumentPyld {
 
     /**
      * Sets the value of the error property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setError(String value) {
         this.error = value;
@@ -120,11 +107,9 @@ public class DocumentPyld {
 
     /**
      * Gets the value of the state property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getState() {
         return state;
@@ -132,11 +117,9 @@ public class DocumentPyld {
 
     /**
      * Sets the value of the state property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setState(String value) {
         this.state = value;
@@ -144,11 +127,9 @@ public class DocumentPyld {
 
     /**
      * Gets the value of the tckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTckn() {
         return tckn;
@@ -156,11 +137,9 @@ public class DocumentPyld {
 
     /**
      * Sets the value of the tckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTckn(String value) {
         this.tckn = value;
@@ -168,11 +147,9 @@ public class DocumentPyld {
 
     /**
      * Gets the value of the term property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTerm() {
         return term;
@@ -180,11 +157,9 @@ public class DocumentPyld {
 
     /**
      * Sets the value of the term property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTerm(String value) {
         this.term = value;

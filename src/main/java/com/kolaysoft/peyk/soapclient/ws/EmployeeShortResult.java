@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for employeeShortResult complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="employeeShortResult"&gt;
  *   &lt;complexContent&gt;
@@ -25,15 +24,13 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "employeeShortResult", propOrder = {
-    "error",
-    "name",
-    "surname",
-    "tckn"
+        "error",
+        "name",
+        "surname",
+        "tckn"
 })
 public class EmployeeShortResult {
 
@@ -44,11 +41,9 @@ public class EmployeeShortResult {
 
     /**
      * Gets the value of the error property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getError() {
         return error;
@@ -56,11 +51,9 @@ public class EmployeeShortResult {
 
     /**
      * Sets the value of the error property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setError(String value) {
         this.error = value;
@@ -68,11 +61,9 @@ public class EmployeeShortResult {
 
     /**
      * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getName() {
         return name;
@@ -80,11 +71,9 @@ public class EmployeeShortResult {
 
     /**
      * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setName(String value) {
         this.name = value;
@@ -92,11 +81,9 @@ public class EmployeeShortResult {
 
     /**
      * Gets the value of the surname property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSurname() {
         return surname;
@@ -104,11 +91,9 @@ public class EmployeeShortResult {
 
     /**
      * Sets the value of the surname property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSurname(String value) {
         this.surname = value;
@@ -116,11 +101,9 @@ public class EmployeeShortResult {
 
     /**
      * Gets the value of the tckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTckn() {
         return tckn;
@@ -128,11 +111,9 @@ public class EmployeeShortResult {
 
     /**
      * Sets the value of the tckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTckn(String value) {
         this.tckn = value;

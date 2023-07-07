@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for getEmployeeByTckn complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="getEmployeeByTckn"&gt;
  *   &lt;complexContent&gt;
@@ -22,12 +21,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getEmployeeByTckn", propOrder = {
-    "tckn"
+        "tckn"
 })
 public class GetEmployeeByTckn {
 
@@ -35,11 +32,9 @@ public class GetEmployeeByTckn {
 
     /**
      * Gets the value of the tckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTckn() {
         return tckn;
@@ -47,11 +42,9 @@ public class GetEmployeeByTckn {
 
     /**
      * Sets the value of the tckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTckn(String value) {
         this.tckn = value;

@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for departmentPyld complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="departmentPyld"&gt;
  *   &lt;complexContent&gt;
@@ -33,23 +32,21 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "departmentPyld", propOrder = {
-    "adres",
-    "departmentCode",
-    "departmentName",
-    "departmentParentCode",
-    "durum",
-    "ilId",
-    "ilName",
-    "ilceId",
-    "ilceName",
-    "isExpenditureDepartment",
-    "typeDescription",
-    "typeId"
+        "adres",
+        "departmentCode",
+        "departmentName",
+        "departmentParentCode",
+        "durum",
+        "ilId",
+        "ilName",
+        "ilceId",
+        "ilceName",
+        "isExpenditureDepartment",
+        "typeDescription",
+        "typeId"
 })
 public class DepartmentPyld {
 
@@ -68,11 +65,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the adres property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAdres() {
         return adres;
@@ -80,11 +75,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the adres property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAdres(String value) {
         this.adres = value;
@@ -92,11 +85,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the departmentCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDepartmentCode() {
         return departmentCode;
@@ -104,11 +95,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the departmentCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDepartmentCode(String value) {
         this.departmentCode = value;
@@ -116,11 +105,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the departmentName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDepartmentName() {
         return departmentName;
@@ -128,11 +115,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the departmentName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDepartmentName(String value) {
         this.departmentName = value;
@@ -140,11 +125,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the departmentParentCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDepartmentParentCode() {
         return departmentParentCode;
@@ -152,11 +135,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the departmentParentCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDepartmentParentCode(String value) {
         this.departmentParentCode = value;
@@ -164,11 +145,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the durum property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDurum() {
         return durum;
@@ -176,11 +155,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the durum property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDurum(String value) {
         this.durum = value;
@@ -188,11 +165,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the ilId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getIlId() {
         return ilId;
@@ -200,11 +175,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the ilId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setIlId(Integer value) {
         this.ilId = value;
@@ -212,11 +185,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the ilName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getIlName() {
         return ilName;
@@ -224,11 +195,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the ilName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setIlName(String value) {
         this.ilName = value;
@@ -236,11 +205,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the ilceId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getIlceId() {
         return ilceId;
@@ -248,11 +215,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the ilceId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setIlceId(Integer value) {
         this.ilceId = value;
@@ -260,11 +225,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the ilceName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getIlceName() {
         return ilceName;
@@ -272,11 +235,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the ilceName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setIlceName(String value) {
         this.ilceName = value;
@@ -284,11 +245,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the isExpenditureDepartment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isIsExpenditureDepartment() {
         return isExpenditureDepartment;
@@ -296,11 +255,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the isExpenditureDepartment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setIsExpenditureDepartment(Boolean value) {
         this.isExpenditureDepartment = value;
@@ -308,11 +265,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the typeDescription property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTypeDescription() {
         return typeDescription;
@@ -320,11 +275,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the typeDescription property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTypeDescription(String value) {
         this.typeDescription = value;
@@ -332,11 +285,9 @@ public class DepartmentPyld {
 
     /**
      * Gets the value of the typeId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getTypeId() {
         return typeId;
@@ -344,11 +295,9 @@ public class DepartmentPyld {
 
     /**
      * Sets the value of the typeId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setTypeId(Integer value) {
         this.typeId = value;

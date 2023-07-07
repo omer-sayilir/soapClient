@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for savePersonalInfoNotAttachedFiles complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="savePersonalInfoNotAttachedFiles"&gt;
  *   &lt;complexContent&gt;
@@ -27,17 +26,15 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "savePersonalInfoNotAttachedFiles", propOrder = {
-    "tckn",
-    "surveyId",
-    "attachmentName",
-    "bulkBytes",
-    "isReplaceWithExisting"
+        "tckn",
+        "surveyId",
+        "attachmentName",
+        "bulkBytes",
+        "isReplaceWithExisting"
 })
 public class SavePersonalInfoNotAttachedFiles {
 
@@ -49,11 +46,9 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Gets the value of the tckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTckn() {
         return tckn;
@@ -61,11 +56,9 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Sets the value of the tckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTckn(String value) {
         this.tckn = value;
@@ -73,7 +66,6 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Gets the value of the surveyId property.
-     * 
      */
     public int getSurveyId() {
         return surveyId;
@@ -81,7 +73,6 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Sets the value of the surveyId property.
-     * 
      */
     public void setSurveyId(int value) {
         this.surveyId = value;
@@ -89,11 +80,9 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Gets the value of the attachmentName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAttachmentName() {
         return attachmentName;
@@ -101,11 +90,9 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Sets the value of the attachmentName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAttachmentName(String value) {
         this.attachmentName = value;
@@ -113,10 +100,9 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Gets the value of the bulkBytes property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     * byte[]
      */
     public byte[] getBulkBytes() {
         return bulkBytes;
@@ -124,10 +110,9 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Sets the value of the bulkBytes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setBulkBytes(byte[] value) {
         this.bulkBytes = value;
@@ -135,11 +120,9 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Gets the value of the isReplaceWithExisting property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isIsReplaceWithExisting() {
         return isReplaceWithExisting;
@@ -147,11 +130,9 @@ public class SavePersonalInfoNotAttachedFiles {
 
     /**
      * Sets the value of the isReplaceWithExisting property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setIsReplaceWithExisting(Boolean value) {
         this.isReplaceWithExisting = value;

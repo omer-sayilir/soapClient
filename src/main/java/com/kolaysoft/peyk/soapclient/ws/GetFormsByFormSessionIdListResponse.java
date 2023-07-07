@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for getFormsByFormSessionIdListResponse complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="getFormsByFormSessionIdListResponse"&gt;
  *   &lt;complexContent&gt;
@@ -23,12 +22,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getFormsByFormSessionIdListResponse", propOrder = {
-    "_return"
+        "_return"
 })
 public class GetFormsByFormSessionIdListResponse {
 
@@ -37,11 +34,9 @@ public class GetFormsByFormSessionIdListResponse {
 
     /**
      * Gets the value of the return property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FormDtoList }
-     *     
+     *
+     * @return possible object is
+     * {@link FormDtoList }
      */
     public FormDtoList getReturn() {
         return _return;
@@ -49,11 +44,9 @@ public class GetFormsByFormSessionIdListResponse {
 
     /**
      * Sets the value of the return property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FormDtoList }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link FormDtoList }
      */
     public void setReturn(FormDtoList value) {
         this._return = value;

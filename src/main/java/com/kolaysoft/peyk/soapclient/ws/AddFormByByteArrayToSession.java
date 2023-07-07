@@ -1,18 +1,17 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for addFormByByteArrayToSession complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="addFormByByteArrayToSession"&gt;
  *   &lt;complexContent&gt;
@@ -27,15 +26,13 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "addFormByByteArrayToSession", propOrder = {
-    "bulkBytes",
-    "fileName",
-    "employeeTcknList",
-    "sessionNumber"
+        "bulkBytes",
+        "fileName",
+        "employeeTcknList",
+        "sessionNumber"
 })
 public class AddFormByByteArrayToSession {
 
@@ -46,10 +43,9 @@ public class AddFormByByteArrayToSession {
 
     /**
      * Gets the value of the bulkBytes property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     * byte[]
      */
     public byte[] getBulkBytes() {
         return bulkBytes;
@@ -57,10 +53,9 @@ public class AddFormByByteArrayToSession {
 
     /**
      * Sets the value of the bulkBytes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setBulkBytes(byte[] value) {
         this.bulkBytes = value;
@@ -68,11 +63,9 @@ public class AddFormByByteArrayToSession {
 
     /**
      * Gets the value of the fileName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFileName() {
         return fileName;
@@ -80,11 +73,9 @@ public class AddFormByByteArrayToSession {
 
     /**
      * Sets the value of the fileName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFileName(String value) {
         this.fileName = value;
@@ -92,25 +83,23 @@ public class AddFormByByteArrayToSession {
 
     /**
      * Gets the value of the employeeTcknList property.
-     * 
+     *
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the employeeTcknList property.
-     * 
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEmployeeTcknList().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
-     * 
-     * 
      */
     public List<String> getEmployeeTcknList() {
         if (employeeTcknList == null) {
@@ -121,11 +110,9 @@ public class AddFormByByteArrayToSession {
 
     /**
      * Gets the value of the sessionNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getSessionNumber() {
         return sessionNumber;
@@ -133,11 +120,9 @@ public class AddFormByByteArrayToSession {
 
     /**
      * Sets the value of the sessionNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setSessionNumber(Integer value) {
         this.sessionNumber = value;

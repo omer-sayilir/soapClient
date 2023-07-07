@@ -1,19 +1,18 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for formDtoList complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="formDtoList"&gt;
  *   &lt;complexContent&gt;
@@ -28,15 +27,13 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "formDtoList", propOrder = {
-    "comment",
-    "error",
-    "formDtos",
-    "totalCount"
+        "comment",
+        "error",
+        "formDtos",
+        "totalCount"
 })
 public class FormDtoList {
 
@@ -48,11 +45,9 @@ public class FormDtoList {
 
     /**
      * Gets the value of the comment property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getComment() {
         return comment;
@@ -60,11 +55,9 @@ public class FormDtoList {
 
     /**
      * Sets the value of the comment property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setComment(String value) {
         this.comment = value;
@@ -72,11 +65,9 @@ public class FormDtoList {
 
     /**
      * Gets the value of the error property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isError() {
         return error;
@@ -84,11 +75,9 @@ public class FormDtoList {
 
     /**
      * Sets the value of the error property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setError(Boolean value) {
         this.error = value;
@@ -96,25 +85,23 @@ public class FormDtoList {
 
     /**
      * Gets the value of the formDtos property.
-     * 
+     *
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the formDtos property.
-     * 
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getFormDtos().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link FormDto }
-     * 
-     * 
      */
     public List<FormDto> getFormDtos() {
         if (formDtos == null) {
@@ -125,11 +112,9 @@ public class FormDtoList {
 
     /**
      * Gets the value of the totalCount property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getTotalCount() {
         return totalCount;
@@ -137,11 +122,9 @@ public class FormDtoList {
 
     /**
      * Sets the value of the totalCount property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setTotalCount(Integer value) {
         this.totalCount = value;

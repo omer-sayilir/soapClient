@@ -1,18 +1,17 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for importFormByByteArrayWithFormTypeAndFormName complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="importFormByByteArrayWithFormTypeAndFormName"&gt;
  *   &lt;complexContent&gt;
@@ -29,17 +28,15 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "importFormByByteArrayWithFormTypeAndFormName", propOrder = {
-    "bulkBytes",
-    "fileName",
-    "employeeTcknList",
-    "formType",
-    "formName",
-    "isAnswerMandatory"
+        "bulkBytes",
+        "fileName",
+        "employeeTcknList",
+        "formType",
+        "formName",
+        "isAnswerMandatory"
 })
 public class ImportFormByByteArrayWithFormTypeAndFormName {
 
@@ -52,10 +49,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Gets the value of the bulkBytes property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     * byte[]
      */
     public byte[] getBulkBytes() {
         return bulkBytes;
@@ -63,10 +59,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Sets the value of the bulkBytes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setBulkBytes(byte[] value) {
         this.bulkBytes = value;
@@ -74,11 +69,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Gets the value of the fileName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFileName() {
         return fileName;
@@ -86,11 +79,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Sets the value of the fileName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFileName(String value) {
         this.fileName = value;
@@ -98,25 +89,23 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Gets the value of the employeeTcknList property.
-     * 
+     *
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the employeeTcknList property.
-     * 
+     *
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getEmployeeTcknList().add(newItem);
      * </pre>
-     * 
-     * 
+     *
+     *
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
-     * 
-     * 
      */
     public List<String> getEmployeeTcknList() {
         if (employeeTcknList == null) {
@@ -127,11 +116,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Gets the value of the formType property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFormType() {
         return formType;
@@ -139,11 +126,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Sets the value of the formType property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFormType(String value) {
         this.formType = value;
@@ -151,11 +136,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Gets the value of the formName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFormName() {
         return formName;
@@ -163,11 +146,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Sets the value of the formName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFormName(String value) {
         this.formName = value;
@@ -175,11 +156,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Gets the value of the isAnswerMandatory property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isIsAnswerMandatory() {
         return isAnswerMandatory;
@@ -187,11 +166,9 @@ public class ImportFormByByteArrayWithFormTypeAndFormName {
 
     /**
      * Sets the value of the isAnswerMandatory property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setIsAnswerMandatory(Boolean value) {
         this.isAnswerMandatory = value;

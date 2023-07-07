@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for deleteBordroSession complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="deleteBordroSession"&gt;
  *   &lt;complexContent&gt;
@@ -22,12 +21,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "deleteBordroSession", propOrder = {
-    "sessionNumber"
+        "sessionNumber"
 })
 public class DeleteBordroSession {
 
@@ -35,11 +32,9 @@ public class DeleteBordroSession {
 
     /**
      * Gets the value of the sessionNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getSessionNumber() {
         return sessionNumber;
@@ -47,11 +42,9 @@ public class DeleteBordroSession {
 
     /**
      * Sets the value of the sessionNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setSessionNumber(Integer value) {
         this.sessionNumber = value;

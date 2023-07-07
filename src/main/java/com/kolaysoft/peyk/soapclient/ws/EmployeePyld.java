@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for employeePyld complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="employeePyld"&gt;
  *   &lt;complexContent&gt;
@@ -47,37 +46,35 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "employeePyld", propOrder = {
-    "activationStatus",
-    "address",
-    "cityOfBirth",
-    "customFields",
-    "dateOfBirth",
-    "departmentCode",
-    "educationLevel",
-    "email",
-    "employmentContract",
-    "employmentStartDate",
-    "employmentStatus",
-    "expenditureDepCode",
-    "integrationCode",
-    "jobTitle",
-    "kepAddress",
-    "managerTckn",
-    "militaryStatus",
-    "name",
-    "remainingAnnualVacation",
-    "remainingExcuseVacation",
-    "salary",
-    "secondManagerTckn",
-    "surname",
-    "tckn",
-    "telephone",
-    "vip"
+        "activationStatus",
+        "address",
+        "cityOfBirth",
+        "customFields",
+        "dateOfBirth",
+        "departmentCode",
+        "educationLevel",
+        "email",
+        "employmentContract",
+        "employmentStartDate",
+        "employmentStatus",
+        "expenditureDepCode",
+        "integrationCode",
+        "jobTitle",
+        "kepAddress",
+        "managerTckn",
+        "militaryStatus",
+        "name",
+        "remainingAnnualVacation",
+        "remainingExcuseVacation",
+        "salary",
+        "secondManagerTckn",
+        "surname",
+        "tckn",
+        "telephone",
+        "vip"
 })
 public class EmployeePyld {
 
@@ -110,11 +107,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the activationStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getActivationStatus() {
         return activationStatus;
@@ -122,11 +117,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the activationStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setActivationStatus(Integer value) {
         this.activationStatus = value;
@@ -134,11 +127,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the address property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getAddress() {
         return address;
@@ -146,11 +137,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the address property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setAddress(String value) {
         this.address = value;
@@ -158,11 +147,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the cityOfBirth property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCityOfBirth() {
         return cityOfBirth;
@@ -170,11 +157,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the cityOfBirth property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCityOfBirth(String value) {
         this.cityOfBirth = value;
@@ -182,11 +167,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the customFields property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getCustomFields() {
         return customFields;
@@ -194,11 +177,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the customFields property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setCustomFields(String value) {
         this.customFields = value;
@@ -206,11 +187,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the dateOfBirth property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDateOfBirth() {
         return dateOfBirth;
@@ -218,11 +197,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the dateOfBirth property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDateOfBirth(String value) {
         this.dateOfBirth = value;
@@ -230,11 +207,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the departmentCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getDepartmentCode() {
         return departmentCode;
@@ -242,11 +217,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the departmentCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setDepartmentCode(String value) {
         this.departmentCode = value;
@@ -254,11 +227,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the educationLevel property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getEducationLevel() {
         return educationLevel;
@@ -266,11 +237,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the educationLevel property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setEducationLevel(String value) {
         this.educationLevel = value;
@@ -278,11 +247,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the email property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getEmail() {
         return email;
@@ -290,11 +257,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the email property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setEmail(String value) {
         this.email = value;
@@ -302,11 +267,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the employmentContract property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getEmploymentContract() {
         return employmentContract;
@@ -314,11 +277,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the employmentContract property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setEmploymentContract(Integer value) {
         this.employmentContract = value;
@@ -326,11 +287,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the employmentStartDate property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getEmploymentStartDate() {
         return employmentStartDate;
@@ -338,11 +297,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the employmentStartDate property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setEmploymentStartDate(String value) {
         this.employmentStartDate = value;
@@ -350,11 +307,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the employmentStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getEmploymentStatus() {
         return employmentStatus;
@@ -362,11 +317,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the employmentStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setEmploymentStatus(String value) {
         this.employmentStatus = value;
@@ -374,11 +327,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the expenditureDepCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getExpenditureDepCode() {
         return expenditureDepCode;
@@ -386,11 +337,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the expenditureDepCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setExpenditureDepCode(String value) {
         this.expenditureDepCode = value;
@@ -398,11 +347,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the integrationCode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getIntegrationCode() {
         return integrationCode;
@@ -410,11 +357,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the integrationCode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setIntegrationCode(String value) {
         this.integrationCode = value;
@@ -422,11 +367,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the jobTitle property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getJobTitle() {
         return jobTitle;
@@ -434,11 +377,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the jobTitle property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setJobTitle(String value) {
         this.jobTitle = value;
@@ -446,11 +387,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the kepAddress property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getKepAddress() {
         return kepAddress;
@@ -458,11 +397,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the kepAddress property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setKepAddress(String value) {
         this.kepAddress = value;
@@ -470,11 +407,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the managerTckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getManagerTckn() {
         return managerTckn;
@@ -482,11 +417,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the managerTckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setManagerTckn(String value) {
         this.managerTckn = value;
@@ -494,11 +427,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the militaryStatus property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getMilitaryStatus() {
         return militaryStatus;
@@ -506,11 +437,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the militaryStatus property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setMilitaryStatus(String value) {
         this.militaryStatus = value;
@@ -518,11 +447,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the name property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getName() {
         return name;
@@ -530,11 +457,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the name property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setName(String value) {
         this.name = value;
@@ -542,11 +467,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the remainingAnnualVacation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
+     *
+     * @return possible object is
+     * {@link Double }
      */
     public Double getRemainingAnnualVacation() {
         return remainingAnnualVacation;
@@ -554,11 +477,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the remainingAnnualVacation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Double }
      */
     public void setRemainingAnnualVacation(Double value) {
         this.remainingAnnualVacation = value;
@@ -566,11 +487,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the remainingExcuseVacation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
+     *
+     * @return possible object is
+     * {@link Double }
      */
     public Double getRemainingExcuseVacation() {
         return remainingExcuseVacation;
@@ -578,11 +497,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the remainingExcuseVacation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Double }
      */
     public void setRemainingExcuseVacation(Double value) {
         this.remainingExcuseVacation = value;
@@ -590,11 +507,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the salary property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Double }
-     *     
+     *
+     * @return possible object is
+     * {@link Double }
      */
     public Double getSalary() {
         return salary;
@@ -602,11 +517,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the salary property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Double }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Double }
      */
     public void setSalary(Double value) {
         this.salary = value;
@@ -614,11 +527,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the secondManagerTckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSecondManagerTckn() {
         return secondManagerTckn;
@@ -626,11 +537,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the secondManagerTckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSecondManagerTckn(String value) {
         this.secondManagerTckn = value;
@@ -638,11 +547,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the surname property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getSurname() {
         return surname;
@@ -650,11 +557,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the surname property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setSurname(String value) {
         this.surname = value;
@@ -662,11 +567,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the tckn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTckn() {
         return tckn;
@@ -674,11 +577,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the tckn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTckn(String value) {
         this.tckn = value;
@@ -686,11 +587,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the telephone property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getTelephone() {
         return telephone;
@@ -698,11 +597,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the telephone property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setTelephone(String value) {
         this.telephone = value;
@@ -710,11 +607,9 @@ public class EmployeePyld {
 
     /**
      * Gets the value of the vip property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Boolean }
-     *     
+     *
+     * @return possible object is
+     * {@link Boolean }
      */
     public Boolean isVip() {
         return vip;
@@ -722,11 +617,9 @@ public class EmployeePyld {
 
     /**
      * Sets the value of the vip property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Boolean }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Boolean }
      */
     public void setVip(Boolean value) {
         this.vip = value;

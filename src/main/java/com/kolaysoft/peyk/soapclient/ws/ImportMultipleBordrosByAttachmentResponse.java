@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for importMultipleBordrosByAttachmentResponse complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="importMultipleBordrosByAttachmentResponse"&gt;
  *   &lt;complexContent&gt;
@@ -23,12 +22,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "importMultipleBordrosByAttachmentResponse", propOrder = {
-    "_return"
+        "_return"
 })
 public class ImportMultipleBordrosByAttachmentResponse {
 
@@ -37,11 +34,9 @@ public class ImportMultipleBordrosByAttachmentResponse {
 
     /**
      * Gets the value of the return property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DocumentResultPyld }
-     *     
+     *
+     * @return possible object is
+     * {@link DocumentResultPyld }
      */
     public DocumentResultPyld getReturn() {
         return _return;
@@ -49,11 +44,9 @@ public class ImportMultipleBordrosByAttachmentResponse {
 
     /**
      * Sets the value of the return property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DocumentResultPyld }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link DocumentResultPyld }
      */
     public void setReturn(DocumentResultPyld value) {
         this._return = value;

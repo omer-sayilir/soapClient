@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -10,9 +9,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Java class for getBordroByDateRange complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="getBordroByDateRange"&gt;
  *   &lt;complexContent&gt;
@@ -27,15 +26,13 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getBordroByDateRange", propOrder = {
-    "start",
-    "end",
-    "page",
-    "size"
+        "start",
+        "end",
+        "page",
+        "size"
 })
 public class GetBordroByDateRange {
 
@@ -48,11 +45,9 @@ public class GetBordroByDateRange {
 
     /**
      * Gets the value of the start property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getStart() {
         return start;
@@ -60,11 +55,9 @@ public class GetBordroByDateRange {
 
     /**
      * Sets the value of the start property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setStart(XMLGregorianCalendar value) {
         this.start = value;
@@ -72,11 +65,9 @@ public class GetBordroByDateRange {
 
     /**
      * Gets the value of the end property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @return possible object is
+     * {@link XMLGregorianCalendar }
      */
     public XMLGregorianCalendar getEnd() {
         return end;
@@ -84,11 +75,9 @@ public class GetBordroByDateRange {
 
     /**
      * Sets the value of the end property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link XMLGregorianCalendar }
      */
     public void setEnd(XMLGregorianCalendar value) {
         this.end = value;
@@ -96,11 +85,9 @@ public class GetBordroByDateRange {
 
     /**
      * Gets the value of the page property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getPage() {
         return page;
@@ -108,11 +95,9 @@ public class GetBordroByDateRange {
 
     /**
      * Sets the value of the page property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setPage(Integer value) {
         this.page = value;
@@ -120,11 +105,9 @@ public class GetBordroByDateRange {
 
     /**
      * Gets the value of the size property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getSize() {
         return size;
@@ -132,11 +115,9 @@ public class GetBordroByDateRange {
 
     /**
      * Sets the value of the size property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setSize(Integer value) {
         this.size = value;

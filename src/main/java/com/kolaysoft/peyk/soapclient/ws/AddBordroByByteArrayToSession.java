@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -8,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for addBordroByByteArrayToSession complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="addBordroByByteArrayToSession"&gt;
  *   &lt;complexContent&gt;
@@ -24,14 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "addBordroByByteArrayToSession", propOrder = {
-    "bulkBytes",
-    "fileName",
-    "sessionNumber"
+        "bulkBytes",
+        "fileName",
+        "sessionNumber"
 })
 public class AddBordroByByteArrayToSession {
 
@@ -41,10 +38,9 @@ public class AddBordroByByteArrayToSession {
 
     /**
      * Gets the value of the bulkBytes property.
-     * 
-     * @return
-     *     possible object is
-     *     byte[]
+     *
+     * @return possible object is
+     * byte[]
      */
     public byte[] getBulkBytes() {
         return bulkBytes;
@@ -52,10 +48,9 @@ public class AddBordroByByteArrayToSession {
 
     /**
      * Sets the value of the bulkBytes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     byte[]
+     *
+     * @param value allowed object is
+     *              byte[]
      */
     public void setBulkBytes(byte[] value) {
         this.bulkBytes = value;
@@ -63,11 +58,9 @@ public class AddBordroByByteArrayToSession {
 
     /**
      * Gets the value of the fileName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getFileName() {
         return fileName;
@@ -75,11 +68,9 @@ public class AddBordroByByteArrayToSession {
 
     /**
      * Sets the value of the fileName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setFileName(String value) {
         this.fileName = value;
@@ -87,11 +78,9 @@ public class AddBordroByByteArrayToSession {
 
     /**
      * Gets the value of the sessionNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getSessionNumber() {
         return sessionNumber;
@@ -99,11 +88,9 @@ public class AddBordroByByteArrayToSession {
 
     /**
      * Sets the value of the sessionNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setSessionNumber(Integer value) {
         this.sessionNumber = value;

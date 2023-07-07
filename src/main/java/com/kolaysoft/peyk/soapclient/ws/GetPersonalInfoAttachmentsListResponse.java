@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for getPersonalInfoAttachmentsListResponse complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="getPersonalInfoAttachmentsListResponse"&gt;
  *   &lt;complexContent&gt;
@@ -23,12 +22,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getPersonalInfoAttachmentsListResponse", propOrder = {
-    "_return"
+        "_return"
 })
 public class GetPersonalInfoAttachmentsListResponse {
 
@@ -37,11 +34,9 @@ public class GetPersonalInfoAttachmentsListResponse {
 
     /**
      * Gets the value of the return property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PersonalInfoAttachmentsListPyld }
-     *     
+     *
+     * @return possible object is
+     * {@link PersonalInfoAttachmentsListPyld }
      */
     public PersonalInfoAttachmentsListPyld getReturn() {
         return _return;
@@ -49,11 +44,9 @@ public class GetPersonalInfoAttachmentsListResponse {
 
     /**
      * Sets the value of the return property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PersonalInfoAttachmentsListPyld }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link PersonalInfoAttachmentsListPyld }
      */
     public void setReturn(PersonalInfoAttachmentsListPyld value) {
         this._return = value;

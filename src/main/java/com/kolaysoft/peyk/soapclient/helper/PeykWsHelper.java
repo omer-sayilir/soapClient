@@ -2,9 +2,6 @@ package com.kolaysoft.peyk.soapclient.helper;
 
 import com.kolaysoft.peyk.soapclient.service.PeykServiceClient;
 import com.kolaysoft.peyk.soapclient.ws.*;
-
-import java.util.*;
-
 import org.springframework.core.io.ClassPathResource;
 
 import javax.activation.DataHandler;
@@ -16,6 +13,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.*;
 
 public class PeykWsHelper {
 
@@ -260,7 +258,7 @@ public class PeykWsHelper {
         DataHandler dataHandler = new DataHandler(fileDataSource);
         attachments.put(file.getName(), dataHandler);
 
-        DocumentResultPyld response = peykServiceClient.ImportMultipleBordrosByAttachment(month, year,attachments);
+        DocumentResultPyld response = peykServiceClient.ImportMultipleBordrosByAttachment(month, year, attachments);
 
     }
 

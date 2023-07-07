@@ -1,4 +1,3 @@
-
 package com.kolaysoft.peyk.soapclient.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -9,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for importMultipleBordrosByAttachment complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="importMultipleBordrosByAttachment"&gt;
  *   &lt;complexContent&gt;
@@ -24,14 +23,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
- * 
- * 
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "importMultipleBordrosByAttachment", propOrder = {
-    "year",
-    "month"
+        "year",
+        "month"
 })
 public class ImportMultipleBordrosByAttachment {
 
@@ -40,11 +37,9 @@ public class ImportMultipleBordrosByAttachment {
 
     /**
      * Gets the value of the year property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getYear() {
         return year;
@@ -52,11 +47,9 @@ public class ImportMultipleBordrosByAttachment {
 
     /**
      * Sets the value of the year property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setYear(Integer value) {
         this.year = value;
@@ -64,11 +57,9 @@ public class ImportMultipleBordrosByAttachment {
 
     /**
      * Gets the value of the month property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
+     *
+     * @return possible object is
+     * {@link Integer }
      */
     public Integer getMonth() {
         return month;
@@ -76,11 +67,9 @@ public class ImportMultipleBordrosByAttachment {
 
     /**
      * Sets the value of the month property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link Integer }
      */
     public void setMonth(Integer value) {
         this.month = value;
