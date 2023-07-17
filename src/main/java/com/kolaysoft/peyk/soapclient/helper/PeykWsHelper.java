@@ -1,5 +1,6 @@
 package com.kolaysoft.peyk.soapclient.helper;
 
+import com.kolaysoft.peyk.soapclient.service.FileUtils;
 import com.kolaysoft.peyk.soapclient.service.PeykServiceClient;
 import com.kolaysoft.peyk.soapclient.ws.*;
 import org.springframework.core.io.ClassPathResource;
@@ -12,12 +13,16 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
 public class PeykWsHelper {
 
     public final PeykServiceClient peykServiceClient;
+
+
+
 
     public PeykWsHelper(PeykServiceClient peykServiceClient) {
         this.peykServiceClient = peykServiceClient;
@@ -267,6 +272,30 @@ public class PeykWsHelper {
 
 
     }
+
+    public void checkFileTypeFromByteArray(){
+        FileUtils fileUtils =new FileUtils();
+        try {
+
+            // bir klasordeki dosya tiplerini test etmek icin
+           // String path="/tmp/test";
+           // String filetType=fileChecker.testFolder(path);
+
+            ClassPathResource resource = new ClassPathResource("bordro_202305.pdf");
+
+            Path path=Paths.get(resource.getURI());
+            String filetTypeByFile= fileUtils.getFileTypeByFile(path);
+            System.out.println("filetTypeByFile:"+filetTypeByFile);
+
+            byte[] bulkBytes = Files.readAllBytes(Paths.get(resource.getURI()));
+            String filetTypeByByteArray= fileUtils.getFileTypeByteArray(bulkBytes);
+            System.out.println("filetTypeByByteArray:"+filetTypeByByteArray);
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 
     //endregion
 }
