@@ -1,7 +1,7 @@
 package com.kolaysoft.peyk.soapclient;
 
 import com.kolaysoft.peyk.soapclient.helper.PeykWsHelper;
-import com.kolaysoft.peyk.soapclient.service.FileUtils;
+import com.kolaysoft.peyk.soapclient.service.FileUtil;
 import com.kolaysoft.peyk.soapclient.service.PeykServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -14,7 +14,7 @@ public class SoapClientApplication implements CommandLineRunner {
     @Autowired
     PeykServiceClient peykServiceClient;
     @Autowired
-    FileUtils fileUtils;
+    FileUtil fileUtil;
 
 
     PeykWsHelper peykWsHelper;

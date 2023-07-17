@@ -12,7 +12,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class FileUtils {
+public class FileUtil {
+
 
     public static String testFolder(Path path) throws IOException {
         File folder = new File(path.toUri());
@@ -27,17 +28,17 @@ public class FileUtils {
     }
 
     public static String getFileTypeByFile(Path filePath) throws IOException {
-        String fileType = null;
         byte[] fileData = Files.readAllBytes(filePath);
-        return getFileType(fileType, fileData);
+        return getFileType(fileData);
     }
 
     public static String getFileTypeByteArray(byte[] fileData) throws IOException {
-        String fileType = null;
-        return getFileType(fileType, fileData);
+
+        return getFileType(fileData);
     }
 
-    private static String getFileType(String fileType, byte[] fileData) {
+    private static String getFileType(byte[] fileData) {
+        String fileType = null;
         MimeTypeSigns types = new MimeTypeSigns();
         HashMap<String, String> mimeSigns = types.getMimeTypeSigns();
         for (Map.Entry<String, String> signs : mimeSigns.entrySet()) {

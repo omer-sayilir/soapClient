@@ -1,6 +1,6 @@
 package com.kolaysoft.peyk.soapclient.helper;
 
-import com.kolaysoft.peyk.soapclient.service.FileUtils;
+import com.kolaysoft.peyk.soapclient.service.FileUtil;
 import com.kolaysoft.peyk.soapclient.service.PeykServiceClient;
 import com.kolaysoft.peyk.soapclient.ws.*;
 import org.springframework.core.io.ClassPathResource;
@@ -274,7 +274,7 @@ public class PeykWsHelper {
     }
 
     public void checkFileTypeFromByteArray(){
-        FileUtils fileUtils =new FileUtils();
+        FileUtil fileUtils =new FileUtil();
         try {
 
             // bir klasordeki dosya tiplerini test etmek icin
