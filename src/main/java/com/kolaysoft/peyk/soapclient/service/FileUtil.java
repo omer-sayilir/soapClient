@@ -15,8 +15,8 @@ import java.util.Map;
 public class FileUtil {
 
 
-    public static String testFolder(Path path) throws IOException {
-        File folder = new File(path.toUri());
+    public static String testFolder(String path) throws IOException {
+        File folder = new File(path);
         File[] listOfFiles = folder.listFiles();
         String fileType = null;
         for (File file : listOfFiles) {

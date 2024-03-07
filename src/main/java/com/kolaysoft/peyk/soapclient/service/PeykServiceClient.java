@@ -126,6 +126,20 @@ public class PeykServiceClient {
 
         return response;
     }
+    public DocumentResultPyld ImportFormByByteArrayRunSync(String fileName, String notificationTitle, List<String> employeeTckNoList, Boolean isAnswerMandatory, byte[] bulkBytes) {
+
+        ImportFormByByteArrayRunSync   request = new ImportFormByByteArrayRunSync();
+        request.setFileName(fileName);
+        request.setBulkBytes(bulkBytes);
+        request.setIsAnswerMandatory(isAnswerMandatory);
+        request.setNotificationTitle(notificationTitle);
+        for (String tckno : employeeTckNoList) {
+            request.getEmployeeTcknList().add(tckno);
+        }
+        DocumentResultPyld response = ((ImportFormByByteArrayResponse) peykService.performRequest(URL, request)).getReturn();
+
+        return response;
+    }
 
     public DocumentResultPyld ImportMultipleBordrosByAttachment(Integer month, Integer year, Map<String, DataHandler> attachments) {
 

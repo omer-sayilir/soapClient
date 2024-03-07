@@ -135,11 +135,13 @@ public class PeykWsHelper {
     public void SavePersonalInfoNotAttachedFiles() {
         try {
             String tckn = "23168513908";
-            String attachmentName = "Diploma";
-            Integer surveyId = 4012;
+            String attachmentName = "İKAMETGAH";
+            Integer surveyId = 4009;
 
             ClassPathResource resource = new ClassPathResource("bordro_202305.pdf");
             byte[] bulkBytes = Files.readAllBytes(Paths.get(resource.getURI()));
+           //  byte[] encodedBytes = Base64.getEncoder().encode(bulkBytes);
+           // String encodedString =  new String(encodedBytes);
             Boolean isReplaceWithExisting = true;
 
 
@@ -272,24 +274,101 @@ public class PeykWsHelper {
 
 
     }
+    public  void ImportMultipleBordrosByAttachment(String filePath) {
+        File file = new File(filePath);
+        if (!file.exists()) throw new RuntimeException("Bordro dosyasina erisilemiyor");
+
+        Integer month = 5;
+        Integer year = 2023;
+        Map<String, DataHandler> attachments = new HashMap<>();
+
+        FileDataSource fileDataSource = new FileDataSource(filePath);
+        DataHandler dataHandler = new DataHandler(fileDataSource);
+        attachments.put(file.getName(), dataHandler);
+
+        DocumentResultPyld response = peykServiceClient.ImportMultipleBordrosByAttachment(month, year, attachments);
+        if(response.isError()){
+            System.out.println("Error:"+response.isError()+ " "+response.getComment());
+        }else{
+            System.out.println("response: "+response.getComment());
+        }
+
+
+    }
+    public void ImportMultipleBordrosByAttachmentForLoadTest() {
+        String filePath = "/tmp/";
+        processBordroFolder(filePath);
+    }
+    public  void processBordroFolder(String folderPath) {
+        File folder = new File(folderPath);
+
+        // Klasör mevcut ve bir klasör olup olmadığını kontrol edin
+        if (folder.exists() && folder.isDirectory()) {
+            // Klasördeki dosyaları listele
+            File[] files = folder.listFiles();
+
+            if (files != null) {
+                // Dosyaları döngüye al
+                for (File file : files) {
+                    // Dosyanın bir PDF dosyası olup olmadığını kontrol et
+                    if (file.isFile() && file.getName().toLowerCase().endsWith(".pdf")) {
+                        // Eğer PDF ise, dosya adını konsola yazdır
+                        ImportMultipleBordrosByAttachment(file.getAbsolutePath());
+                    }
+                }
+            } else {
+                System.out.println("Klasör boş.");
+            }
+        } else {
+            System.out.println("Belirtilen klasör bulunamadı veya klasör değil.");
+        }
+    }
+
+
+
+    public void ImportFormByByteArrayRunSync() {
+        String filePath = "/tmp/bordro.pdf";
+        File file = new File(filePath);
+        if (!file.exists()) throw new RuntimeException("Form dosyasina erisilemiyor");
+        try {
+
+        String fileName=file.getName();
+        String notificationTitle="prosedür test";
+        Boolean isAnswerMandatory=false;
+        byte[]  bulkBytes = Files.readAllBytes(Paths.get(file.getPath()));
+        List<String> employeeTckNoList = new ArrayList<>();
+        employeeTckNoList.add("23168513908");
+
+        DocumentResultPyld response = peykServiceClient.ImportFormByByteArrayRunSync(fileName,notificationTitle, employeeTckNoList,isAnswerMandatory,bulkBytes);
+        if(response.isError()){
+            System.out.println("Error:"+response.isError()+ " "+response.getComment());
+        }else{
+            System.out.println("response: "+response.getComment());
+        }
+        } catch (IOException e) {
+            System.out.println("Error: IOExpeption "+e.getMessage());
+        }
+
+    }
 
     public void checkFileTypeFromByteArray(){
         FileUtil fileUtils =new FileUtil();
         try {
 
             // bir klasordeki dosya tiplerini test etmek icin
-           // String path="/tmp/test";
-           // String filetType=fileChecker.testFolder(path);
+            String path="/tmp/test";
+            String filetType=fileUtils.testFolder(path);
+            System.out.println("filetType:"+filetType);
 
-            ClassPathResource resource = new ClassPathResource("bordro_202305.pdf");
-
-            Path path=Paths.get(resource.getURI());
-            String filetTypeByFile= fileUtils.getFileTypeByFile(path);
-            System.out.println("filetTypeByFile:"+filetTypeByFile);
-
-            byte[] bulkBytes = Files.readAllBytes(Paths.get(resource.getURI()));
-            String filetTypeByByteArray= fileUtils.getFileTypeByteArray(bulkBytes);
-            System.out.println("filetTypeByByteArray:"+filetTypeByByteArray);
+//            ClassPathResource resource = new ClassPathResource("bordro_202305.pdf");
+//
+//            Path path=Paths.get(resource.getURI());
+//            String filetTypeByFile= fileUtils.getFileTypeByFile(path);
+//            System.out.println("filetTypeByFile:"+filetTypeByFile);
+//
+//            byte[] bulkBytes = Files.readAllBytes(Paths.get(resource.getURI()));
+//            String filetTypeByByteArray= fileUtils.getFileTypeByteArray(bulkBytes);
+//            System.out.println("filetTypeByByteArray:"+filetTypeByByteArray);
 
         } catch (IOException e) {
             throw new RuntimeException(e);
