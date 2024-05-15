@@ -136,7 +136,7 @@ public class PeykServiceClient {
         for (String tckno : employeeTckNoList) {
             request.getEmployeeTcknList().add(tckno);
         }
-        DocumentResultPyld response = ((ImportFormByByteArrayResponse) peykService.performRequest(URL, request)).getReturn();
+        DocumentResultPyld response = ((ImportFormByByteArrayRunSyncResponse) peykService.performRequest(URL, request)).getReturn();
 
         return response;
     }
